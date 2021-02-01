@@ -33,15 +33,18 @@ const App = () => {
                 <td>
                   <code>getBrowserLanguageCode</code>
                 </td>
-                <td>{JSON.stringify(getBrowserLanguageCode())}</td>
+                <td>{JSON.stringify(browserLanguageCode)}</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>getBrowserLanguageName</code>
+                </td>
+                <td>
+                  {JSON.stringify(getBrowserLanguageName(browserLanguageCode))}
+                </td>
               </tr>
             </tbody>
           </table>
-          <br />
-          <p className="text-center">
-            Your browser language is{" "}
-            <strong>{getBrowserLanguageName(browserLanguageCode)}</strong>.
-          </p>
         </div>
       </div>
     </div>
