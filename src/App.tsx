@@ -27,13 +27,13 @@ const App = () => {
                 <td>
                   <code>navigator.language</code>
                 </td>
-                <td>{navigator.language}</td>
+                <td>{JSON.stringify(navigator.language)}</td>
               </tr>
               <tr>
                 <td>
                   <code>getBrowserLanguageCode</code>
                 </td>
-                <td>{getBrowserLanguageCode()}</td>
+                <td>{JSON.stringify(getBrowserLanguageCode())}</td>
               </tr>
             </tbody>
           </table>
